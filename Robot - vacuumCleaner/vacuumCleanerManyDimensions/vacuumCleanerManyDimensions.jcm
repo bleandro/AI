@@ -1,0 +1,30 @@
+/* 
+    vacuumCleanerManyDimensions
+    ---------------------------
+
+    JaCaMo Project File
+    
+    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
+    
+    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
+    
+    JaCaMo <VERSION>
+    <DATE>
+*/
+
+mas vacuumCleanerManyDimensions {
+
+    agent artifactHandler : artifactHandler.asl
+    agent cleaner1 : robot.asl 
+    
+    agent cleaner2 : robot.asl {
+    	beliefs: at(2,3)
+    	         direction(left, up)
+    }
+    
+    // agent source path
+    asl-path: src/agt
+              src/agt/inc
+
+}
+
