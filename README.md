@@ -1,2 +1,2 @@
 # AI
-Using to learn more about Articial Inteligence
+Using to learn more about Artificial Intelligence
